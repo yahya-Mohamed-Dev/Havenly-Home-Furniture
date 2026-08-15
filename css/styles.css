@@ -1,0 +1,275 @@
+    :root {
+        --ink: #17201c;
+        --muted: #68716d;
+        --line: #e7e9e7;
+        --cream: #f5f2ec;
+        --sale: #b83b2e
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--ink);
+        background: #fff
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit
+    }
+
+    .topbar {
+        background: #17201c;
+        color: #fff;
+        font-size: 13px
+    }
+
+    .topbar .container {
+        min-height: 36px
+    }
+
+    .brand {
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: -1.5px
+    }
+
+    .search {
+        background: #f5f6f5;
+        border: 1px solid #dfe3df;
+        border-radius: 4px;
+        height: 46px
+    }
+
+    .search input {
+        border: 0;
+        background: transparent;
+        outline: 0;
+        width: 100%
+    }
+
+    .nav-main {
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line)
+    }
+
+    .nav-main a {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 14px 10px;
+        display: block;
+        white-space: nowrap
+    }
+
+    .nav-main a:hover {
+        background: #f6f7f6
+    }
+
+    .hero {
+        min-height: 480px;
+        background:
+            linear-gradient(90deg, rgba(18, 26, 22, .72), rgba(18, 26, 22, .10)),
+            url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85") center/cover;
+        color: white;
+        display: flex;
+        align-items: center
+    }
+
+    .hero h1 {
+        font-size: clamp(40px, 6vw, 72px);
+        font-weight: 800;
+        letter-spacing: -3px;
+        max-width: 680px
+    }
+
+    .hero p {
+        font-size: 20px;
+        max-width: 550px;
+        color: #f4f4f4
+    }
+
+    .btn-darkx {
+        background: #17201c;
+        color: #fff;
+        border: 0;
+        border-radius: 3px;
+        padding: 13px 22px;
+        font-weight: 700
+    }
+
+    .btn-darkx:hover {
+        background: #2c3832;
+        color: #fff
+    }
+
+    .section-title {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -.7px
+    }
+
+    .cat-card {
+        position: relative;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 4px;
+        background: #eee
+    }
+
+    .cat-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: .35s
+    }
+
+    .cat-card:hover img {
+        transform: scale(1.05)
+    }
+
+    .cat-label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(0, 0, 0, .65));
+        color: #fff;
+        padding: 35px 16px 15px;
+        font-weight: 800;
+        font-size: 19px
+    }
+
+    .product-card {
+        border: 1px solid var(--line);
+        height: 100%;
+        position: relative;
+        background: #fff;
+        transition: .2s
+    }
+
+    .product-card:hover {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+        transform: translateY(-2px)
+    }
+
+    .product-img {
+        height: 235px;
+        object-fit: cover;
+        width: 100%;
+        background: #f3f3f3
+    }
+
+    .heart {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        background: #fff;
+        border: 0;
+        border-radius: 50%;
+        width: 38px;
+        height: 38px;
+        box-shadow: 0 2px 8px #0001
+    }
+
+    .badge-sale {
+        background: #fff1ef;
+        color: var(--sale);
+        font-size: 11px;
+        font-weight: 800;
+        padding: 5px 8px;
+        border-radius: 3px
+    }
+
+    .stars {
+        letter-spacing: 1px;
+        font-size: 12px
+    }
+
+    .price {
+        font-weight: 800;
+        font-size: 20px
+    }
+
+    .old {
+        text-decoration: line-through;
+        color: #8b928e;
+        font-size: 13px
+    }
+
+    .banner {
+        background: var(--cream);
+        min-height: 300px
+    }
+
+    .banner img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover
+    }
+
+    .room-card {
+        height: 300px;
+        overflow: hidden;
+        position: relative
+    }
+
+    .room-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover
+    }
+
+    .room-card div {
+        position: absolute;
+        inset: auto 0 0;
+        padding: 50px 20px 18px;
+        color: #fff;
+        background: linear-gradient(transparent, #000b);
+        font-size: 21px;
+        font-weight: 800
+    }
+
+    footer {
+        background: #17201c;
+        color: #fff
+    }
+
+    .footer-link {
+        color: #d6dbd8;
+        font-size: 14px;
+        display: block;
+        margin-bottom: 9px
+    }
+
+    .toast-box {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 2000;
+        display: none
+    }
+
+    @media(max-width:767px) {
+        .hero {
+            min-height: 410px
+        }
+
+        .hero h1 {
+            letter-spacing: -2px
+        }
+
+        .product-img {
+            height: 190px
+        }
+
+        .cat-card {
+            height: 180px
+        }
+
+        .nav-scroll {
+            overflow: auto
+        }
+    }
